@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <!--fevicon-->
+  <link rel="icon" href="favicon.ico">
+  <!--we use this to add fevicon aside title bar-->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <!--use it to add fonts to our website-->
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--use to add direct link of by-default class in bootstrap that contain css properties-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--use it to link our external stylesheet-->
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!--use to add icons like apple and android-->
+
+  <!-- Bootstrap Scripts .components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <!--section use for headers or footers or any other section of documents and id for background color and padding-->
+
+    <div class="container-fluid">
+      <!--we Use .container-fluid for a full width container, spanning the entire width of the viewport.max.utilisation of the screen.and we nest navigation bar,title like button and image of dog.total we make 3 devisions respect.-->
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!--navigation bar can extend or collapse, depending on the screen size.thats why we use navbar for large screen with dark theme-->
+
+        <a class="navbar-brand" href="">tindog</a>
+        <!--.navbar-brand for your company, product, or project name.when we click on this our website loads-->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <!--we use toggler classes for proper responsive styling.like if we open our website in phone so it toggle according to mobile screen for this we create button.we specify data target id in next div section to specify which part has to be collapse and which not-->
+          <span class="navbar-toggler-icon"></span>
+          <!--it is use to see icon when we minise our window or collapse our window or open our window in phone.it is the 3 line that apear from which we click to see information-->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <!--when we click button this devision will operate as we mention the id of this div-->
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+              <!--we use footer id to acces it.when user click on contact it automatically takes it to bottom of website where all contacts are located-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <!--Bootstrap's grid system allows up to 12 columns across the page.If you do not want to use all 12 column individually, you can group the columns together to create wider columns therefore we devide the screen in 2 parts 2/12=6 one for buttons and one for image-->
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <!--here we create class button of dark colour and large.and use the icon from fab awesome website-->
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <!--class white section use to give white colour to particular section.if we don't give it then our mobile image will come over our section-->
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <!--first we create a row and then we add our desired no. of 3 coloumns 4/12=3.this is our main division secton in which there are 3 divisions-->
+        <div class="feature-box col-lg-4">
+          <!--we use it for Mixed: mobile, tablet, and desktop screen so that its show same in three screens-->
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <!--use icons from font awesome-->
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <!--we use carousel to make slide show of data.we make data rid to false so that it only play when we click on it-->
+      <div class="carousel-inner">
+        <!--contain content of carousel items-->
+        <div class="carousel-item active container-fluid">
+          <!--it is the first slide that will display when we load our website and is mark as active class-->
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/rohit.jpg" alt="rohit"-profile">
+          <em>Rohit vashisht, Delhi</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life and happyness.</h2>
+          <img class="testimonial-image" src="images/aman.jpg" alt="aman"-profile">
+          <em>Aman pundhir, Delhi</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <!--button we put to get our previous slide.role=button is important-->
+        <span class="carousel-control-prev-icon"></span>
+        <!--this comes from bootstrap by adding it here-->
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+      <!--we wrap 3 div inside this div-->
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <!--on large we want all three to take 1/3.while on medium size we want it to take 1/2-->
+        <div class="card">
+          <div class="card-header">
+            <!--use for headers-->
+            <h3>Trial</h3>
+          </div>
+          <div class="card-body">
+            <!--The building block of a card is the .card-body. Use it whenever you need a padded section within a card.-->
+            <h2 class="price-text">1 month Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Gold</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Rs.699 /mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Premium</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Rs.999 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg brn-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2020 TinDog</p>
+      <p>A website by Rohit and Aman</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
